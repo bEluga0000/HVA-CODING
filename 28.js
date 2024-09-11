@@ -36,3 +36,4 @@ const LCMB = (n1,n2)=>{
     return
 }
 LCMB(20,30)
+// 
