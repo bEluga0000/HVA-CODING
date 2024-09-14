@@ -11,3 +11,4 @@ const minEle = (arr) => {
     console.log(min)
 }
 minEle([9, 2, 3, 4, 5])
+// test
