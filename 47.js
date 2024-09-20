@@ -23,6 +23,6 @@ const indOfMin = (arr)=>{
         }
         i++
     }
-    console.log(`Minimun value ${min} is at index ${minInd}`)
+    console.log(`Minimun value ${min} is at index ${minInd+1}`)
 }
 indOfMin([10,5,6,3,4,3,5,6])
