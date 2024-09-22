@@ -10,23 +10,20 @@
 // Sample Output 2:
 // No
 // Explanation 2: In the given array, there are no perfect squares.
-const perfectSquare = (arr)=>{
+const perfectSquare = (arr) => {
     let i = 0
     let perfectSquareNumber = null
     while (true) {
         if (arr[i] == undefined || arr[i] == null)
             break
-        else
-        {
-            console.log(Math.sqrt(arr[i]))
-            const sqrtVal = Math.sqrt(arr[i])
-            if (Number.isInteger(sqrtVal)) {
-                perfectSquareNumber = arr[i]
-            }
-            i++
+        const sqrtVal = Math.sqrt(arr[i])
+        if (Number.isInteger(sqrtVal)) {
+            perfectSquareNumber = arr[i]
+            break
         }
+        i++
     }
     console.log(perfectSquareNumber)
 }
-perfectSquare([3,6,7,4,6,9,1,23])
-perfectSquare([10,8,14,11,6,15])
+perfectSquare([3, 6, 7, 4, 6, 9, 1, 23])
+perfectSquare([10, 8, 14, 11, 6, 15])
