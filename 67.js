@@ -43,3 +43,25 @@ const isSubArray = (arr1,arr2)=>{
 }
 isSubArray([3, 6, 2, 1, 7, 6, 4, 9, 7], [7,6,4,9,7])
 isSubArray([3, 6, 2, 1, 7, 6, 4, 9, 7], [7, 6, 4, 9, 6])
+
+const isSubArrayStr = (arr1,arr2)=>{
+    let str1 = ""
+    let str2 = ""
+    let i=0
+    while (true) {
+        if (arr1[i] == null || arr1[i] == undefined)
+            break
+        str1+=arr1[i]
+        i++
+    }
+    i=0
+    while (true) {
+        if (arr2[i] == null || arr2[i] == undefined)
+            break
+        str2 += arr2[i]
+        i++
+    }
+    console.log(str1.includes(str2))
+}
+isSubArrayStr([3, 6, 2, 1, 7, 6, 4, 9, 7], [7, 6, 4, 9, 7])
+isSubArrayStr([3, 6, 2, 1, 7, 6, 4, 9, 7], [7, 6, 4, 9, 6])
