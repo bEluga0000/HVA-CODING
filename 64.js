@@ -25,3 +25,23 @@ const pairSumBrute = (arr, k) => {
     }
 }
 pairSumBrute([4, 6, 7, 2, 8, 9, 3, 10], 10)
+
+const pairSum = (arr, k) => {
+    const map = new Map()
+    let i = 0
+    while (true) {
+        if (arr[i] == null || arr[i] == undefined)
+            break
+        i++
+    }
+    let count = i
+    i = 0
+    while (i <= count) {
+        if (map.has(k - arr[i]))
+            console.log(arr[i], k - arr[i])
+        else
+            map.set(arr[i], i)
+        i++
+    }
+}
+pairSum([4, 6, 7, 2, 8, 9, 3, 10], 10)
